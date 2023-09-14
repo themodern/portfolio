@@ -1,0 +1,66 @@
+
+#logo{
+    width: 50px;
+    height: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:0;
+}
+
+
+.heading {
+    font-size: 24px; /* Default font size for screens without media queries */
+}
+
+@media (max-width: 768px) {
+    /* Adjust font size for screens up to 768px width */
+    .heading {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Adjust font size for screens up to 576px width */
+    .heading {
+        font-size: 16px;
+    }
+}
+
+#cards_Car{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.item{
+    margin: 20px;
+    border-style: none;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    margin-top: 10%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #0000004a;
+    justify-content: center;
+}
+
+#modalcart {
+    margin-top: 0%;
+    width: 80%;
+    height: 80%;
+    box-shadow: #ffffff;
+    background-color: #ffffff;
+}
